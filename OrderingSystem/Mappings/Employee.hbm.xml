@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="OrderingSystem.Domain"
+                   assembly="OrderingSystem">
+  <class name="Employee">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <component name="Name" class="Name">
+      <property name="LastName" length="50" not-null="true"/>
+      <property name="FirstName" length="50" not-null="true"/>
+      <property name="MiddleName" length="50"/>
+    </component>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="OrderingSystem.Tests"
+                   assembly="OrderingSystem.Tests">
+  <class name="Book">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="Title" not-null="true"/>
+    <property name="Publisher" not-null="true"/>
+    <property name="YearOfPublication" not-null="true"/>
+    <bag name="Authors" table="BookAuthor">
+      <key column="BookId"/>
+      <many-to-many class="Author" column="AuthorId" />
+    </bag>
+  </class>
+
+  <class name="Author">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="LastName" not-null="true"/>
+    <property name="FirstName" not-null="true"/>
+    <bag name="Books" table="BookAuthor">
+      <key column="AuthorId"/>
+      <many-to-many class="Book" column="BookId" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OrderingSystem.Domain.Address" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIgAAAAAAAAAAAAIAhAAAARAAAAiA=</HashCode>
+      <FileName>Domain\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderingSystem.Domain.Customer">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="Customer" Hidden="true" />
+      <Field Name="orders" Hidden="true" />
+      <Method Name="PlaceOrder" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Name" Type="OrderingSystem.Domain.Name" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="2.561" />
+        <Point X="17.25" Y="2.561" />
+        <Point X="17.25" Y="3.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Orders" Type="OrderingSystem.Domain.Order" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="2.625" />
+        <Point X="12.25" Y="2.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAEAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Domain\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="orders" />
+      <Property Name="Name" />
+      <Property Name="Address" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OrderingSystem.Domain.Employee" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Name" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OrderingSystem.Domain.LineItem">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="LineItem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <FileName>Domain\LineItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OrderingSystem.Domain.Name" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAgAAQAAAAAAAAAIAAAAAAAAAAAig=</HashCode>
+      <FileName>Domain\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderingSystem.Domain.Order">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="AddProduct" Hidden="true" />
+      <Field Name="lineItems" Hidden="true" />
+      <Method Name="Order" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAEAgACAAAAAAAIAAAACQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="lineItems" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="LineItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OrderingSystem.Domain.Product">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="Product" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAAAAgAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

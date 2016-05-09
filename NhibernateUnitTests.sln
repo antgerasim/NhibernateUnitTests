@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingSystem", "OrderingSystem\OrderingSystem.csproj", "{78DE8EB9-CB88-457A-ADF8-384CC889F9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingSystem.Tests", "OrderingSystem.Tests\OrderingSystem.Tests.csproj", "{50E70759-BB3C-4130-9BAD-94583A334859}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schema", "Schema", "{A9F099AF-73DB-4A91-AE76-9644A39F7952}"
+	ProjectSection(SolutionItems) = preProject
+		..\lib\nhibernate-configuration.xsd = ..\lib\nhibernate-configuration.xsd
+		..\lib\nhibernate-mapping.xsd = ..\lib\nhibernate-mapping.xsd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78DE8EB9-CB88-457A-ADF8-384CC889F9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DE8EB9-CB88-457A-ADF8-384CC889F9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DE8EB9-CB88-457A-ADF8-384CC889F9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DE8EB9-CB88-457A-ADF8-384CC889F9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E70759-BB3C-4130-9BAD-94583A334859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E70759-BB3C-4130-9BAD-94583A334859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E70759-BB3C-4130-9BAD-94583A334859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E70759-BB3C-4130-9BAD-94583A334859}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
